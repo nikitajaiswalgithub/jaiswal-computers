@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Passport Photo Kiosk</title>
+<link rel="stylesheet" href="bank.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    section {
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+    }
+    .photo-types {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .photo-types div {
+        text-align: center;
+        margin: 10px;
+    }
+    .photo-types img {
+        width: 150px;
+        margin: 10px;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<nav>
+    <a href="http://127.0.0.1:5501/index1.html" class="nav-item" id="back-arrow">
+        &#8592; <!-- Unicode character for left arrow -->
+    </a>
+    <div class="nav-item"><a href="http://127.0.0.1:5501/index2.html">Login</a></div>
+    <div class="nav-item"><a href="http://127.0.0.1:5501/index.html">Home</a></div>
+    <div class="nav-item"><a href="http://127.0.0.1:5501/contact.html">Contact</a></div>
+    <div class="nav-item"><a href="http://127.0.0.1:5501/index1.html">Services</a></div>
+    <div class="nav-item"><a href="http://127.0.0.1:5501/location.html">Location</a></div>
+    <div class="nav-item"><a href="http://127.0.0.1:5501/group.html">Join Group</a></div>
+    <div class="nav-item"><a href="http://127.0.0.1:5501/pay.html">Pay Online</a></div>
+</nav>
+
+
+<body>
+    <header>
+        <h1>Online Passport Photo Kiosk</h1>
+    </header>
+    <section>
+        <h2>Select Photo Type</h2>
+        <div class="photo-types">
+            <div>
+                <img src="images/password1.jpg" alt="Passport Photo">
+                <p>Passport Photo</p>
+            </div>
+            <div>
+                <img src="images/password2.jpg" alt="Visa Photo">
+                <p>Visa Photo</p>
+            </div>
+
+            <div>
+                <img src="images/pasport combo.jpg" alt="Passport Photo">
+                <p>Visa Photo</p>
+            </div>
+            <!-- Add more photo types as needed -->
+        </div>
+    </section>
+    <footer>
+        <p> 2024 Online Passport Photo Kiosk</p>
+    </footer>
+</body>
+</html>
