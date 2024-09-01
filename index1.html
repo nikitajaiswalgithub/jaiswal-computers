@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cards</title>
+<!-- <link rel="stylesheet" href="bank.css"> -->
+
+</head>
+
+<style type="text/css">
+nav {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+
+
+
+
+    /* justify-content: space-between;
+    align-items: center; */
+}
+
+.nav-item {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: #555;
+}
+
+#back-arrow {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item, a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 15px;
+    }
+
+    .nav-item:not(:first-child), a:not(:first-child) {
+        border-top: 1px solid #444;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   * {
+      margin: 0px;
+      padding: 0px;
+   }
+   
+   body {
+      font-family: arial;
+      display: flex;
+      flex-direction: column;
+      background-size: cover;
+      height: 100vh;
+   }
+   
+   .main {
+      margin: 2%;
+   }
+   
+   .card {
+      width: 20%;
+      display: inline-block;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 5px;
+      margin: 2%;
+   }
+   
+   .image img {
+      width: 100%;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+   }
+   
+   .title {
+      text-align: center;
+      padding: 10px;
+   }
+   
+   h1 {
+      font-size: 20px;
+   }
+   
+   .des {
+      padding: 3px;
+      text-align: center;
+      padding-top: 10px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+   }
+   
+   button {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      background-color: black;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 10px;
+   }
+   
+   button:hover {
+      background-color: black;
+      color: white;
+      transition: .5s;
+      cursor: pointer;
+   }
+   
+  
+
+   
+   /* Media Queries for Responsive Design */
+   @media (max-width: 1200px) {
+      .card {
+          width: 25%;
+      }
+   
+      .header ul li a {
+          font-size: 18px;
+      }
+   }
+   
+   @media (max-width: 992px) {
+      .card {
+          width: 30%;
+      }
+   
+      .header ul li a {
+          font-size: 16px;
+          padding: 20px;
+      }
+   
+      h1 {
+          font-size: 18px;
+      }
+   }
+   
+   @media (max-width: 768px) {
+      .card {
+          width: 45%;
+      }
+   
+      .header ul li a {
+          font-size: 14px;
+          padding: 15px;
+      }
+   
+      button {
+          margin-top: 30px;
+          padding: 8px;
+      }
+   
+      h1 {
+          font-size: 16px;
+      }
+   }
+   
+   @media (max-width: 576px) {
+      .card {
+          width: 90%;
+      }
+   
+      .header ul li a {
+          font-size: 12px;
+          padding: 10px;
+      }
+   
+      button {
+          margin-top: 20px;
+          padding: 6px;
+      }
+   
+      h1 {
+          font-size: 14px;
+      }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </style>
+    <nav>
+      <a href="http://127.0.0.1:5501/index.html" class="nav-item" id="back-arrow">
+          &#8592; <!-- Unicode character for left arrow -->
+      </a>
+      <div class="nav-item"><a href="http://127.0.0.1:5501/index2.html">Login</a></div>
+      <div class="nav-item"><a href="http://127.0.0.1:5501/index.html">Home</a></div>
+      <div class="nav-item"><a href="http://127.0.0.1:5501/contect.html">Contact</a></div>
+      <div class="nav-item"><a href="http://127.0.0.1:5501/index1.html">Services</a></div>
+      <div class="nav-item"><a href="http://127.0.0.1:5501/location.html">Location</a></div>
+      <div class="nav-item"><a href="http://127.0.0.1:5501/group.html">Join Group</a></div>
+      <div class="nav-item"><a href="http://127.0.0.1:5501/pay.html">Pay Online</a></div>
+      <div class="nav-item"><a href="http://127.0.0.1:5501/work.html">work</a></div>
+
+  </nav>
+<body>
+
+
+
+<div class="main">
+
+ <!--card11 -->
+
+<div class="card">
+
+<div class="image">
+   <img src="images/bank.png">
+</div>
+<div class="title">
+ <h1>Bank releted information</h1>
+</div>
+<div class="des">
+<p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+ <button><a href ="http://127.0.0.1:5501/bank.html">check</a></button>
+</div>
+</div>
+
+<!--card2 -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="images/scolership.jpg">
+</div>
+<div class="title">
+ <h1>Scholership form releted informaton</h1>
+</div>
+<div class="des">
+   <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+<button><a href="http://127.0.0.1:5501/scolarship.html">check</a></button>
+</div>
+</div>
+
+<!--card3 -->
+<div class="card">
+
+   <div class="image">
+      <img src="images/smagrid.jpg">
+   </div>
+   <div class="title">
+    <h1>Samagra Id card releted information</h1>
+   </div>
+   <div class="des">
+      <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+    <button><a href="http://127.0.0.1:5501/samagr.html">click</a></button>
+   
+   </div>
+   </div>
+
+
+<!--cards4 -->
+<div class="card">
+
+   <div class="image">
+      <img src="images/peninfo.jpg">
+   </div>
+   <div class="title">
+    <h1>
+   Pen card releted informaton</h1>
+   </div>
+   <div class="des">
+      <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+   <button><a href="http://127.0.0.1:5501/pencard.html">click</a></button>
+   </div>
+   </div>
+   
+   
+<!--card5 -->
+<div class="card">
+
+<div class="image">
+   <img src="images/government form.jpg">
+</div>
+<div class="title">
+ <h1>Government exam forms releted information</h1>
+</div>
+<div class="des">
+   <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+<button><a href="http://127.0.0.1:5501/govnjob.html">click</a></button>
+</div>
+</div>
+
+<!--card6 -->
+<div class="card">
+
+<div class="image">
+   <img src="images/aayusman.jpg">
+</div>
+<div class="title">
+ <h1>Aayusman card releted informatin</h1>
+</div>
+<div class="des">
+   <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+<button><a href="http://127.0.0.1:5501/Aayushmancard.html">click</a></button>
+</div>
+</div>
+
+<!--card7 -->
+<div class="card">
+<div class="image">
+   <img src="images/sabalcard.png">
+</div>
+<div class="title">
+ <h1>sambal card information</h1>
+</div>
+<div class="des">
+   <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+<button><a href="http://127.0.0.1:5501/sambalcard.html">click</a></button>
+</div>
+</div>
+
+<!--card8 -->
+<div class="card">
+<div class="image">
+       <img src="images/sramikcard.jpg">
+    </div>
+    <div class="title">
+     <h1>Shramik Card releted information</h1>
+    </div>
+    <div class="des">
+      <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+    <button><a href="http://127.0.0.1:5501/shramikcard.html">click</a></button>
+    </div>
+    </div>
+
+
+    <!--card9 -->
+<div class="card">
+
+    <div class="image">
+       <img src="images/emi.png">
+    </div>
+    <div class="title">
+     <h1>EMI releted information</h1>
+    </div>
+    <div class="des">
+      <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+    <button><a href="http://127.0.0.1:5501/EMI.html">click</a></button>
+    </div>
+    </div>
+    
+
+    
+    <!--card10 -->
+<div class="card">
+
+    <div class="image">
+       <img src="images/helthidcard.jpg">
+    </div>
+    <div class="title">
+     <h1>Helth_id Card releted information</h1>
+    </div>
+    <div class="des">
+      <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+    <button><a href="http://127.0.0.1:5501/helthcard.html">click</a></button>
+    </div>
+    </div>
+    
+<!--card11 -->
+<div class="card">
+
+    <div class="image">
+       <img src="images/password.jpg">
+    </div>
+    <div class="title">
+     <h1>Passport size photos</h1>
+    </div>
+    <div class="des">
+      <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+    <button><a href="http://127.0.0.1:5501/photo.html">click</a></button>
+    </div>
+    </div>
+    
+    
+<!--card12 -->
+<div class="card">
+   <div class="image">
+   <img src="images/aadar.jpg">
+</div>
+<div class="title">
+ <h1>
+Aadhar Card</h1>
+</div>
+<div class="des">
+   <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+<button><a href="http://127.0.0.1:5501/aadhar.html">click</a></button>
+</div>
+</div>
+
+
+
+<div class="card">
+   <div class="image">
+   <img src="images/income.jpg">
+</div>
+<div class="title">
+ <h1>
+Income Certificate</h1>
+</div>
+<div class="des">
+   <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+<button><a href="http://127.0.0.1:5501/income.html">click</a></button>
+</div>
+</div>
+
+
+
+<div class="card">
+   <div class="image">
+   <img src="images/domacic.jpg">
+</div>
+<div class="title">
+ <h1>
+Domicie Certificate</h1>
+</div>
+<div class="des">
+   <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+<button><a href="http://127.0.0.1:5501/Domicie.html">click</a></button>
+</div>
+</div>
+
+
+
+<div class="card">
+   <div class="image">
+   <img src="images/ok id.jpg">
+</div>
+<div class="title">
+ <h1>
+Ok Recharg </h1>
+</div>
+<div class="des">
+   <p>आप नीचे जाकर सभी विवरण प्राप्त कर सकते हैं...</p>
+<button><a href="http://127.0.0.1:5501/OkRecharg.html">click</a></button>
+</div>
+</div>
+</div>
+</body>
+</html>
