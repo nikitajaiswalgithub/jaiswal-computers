@@ -14,6 +14,7 @@ header {
     background-color: #333;
     display: flex;
     justify-content: center;
+    padding: 10px 0;
 }
 
 nav ul {
@@ -21,11 +22,12 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
-    padding: 15px 20px;
+    margin: 0 10px;
+    padding: 10px 15px;
 }
 
 nav ul li a {
@@ -36,10 +38,11 @@ nav ul li a {
 
 .container {
     text-align: center;
+    padding: 20px;
 }
 
 .container img {
-    max-width: 100%;
+    max-width: 50%; /* इमेज का साइज़ छोटा कर दिया गया है */
     height: auto;
     margin-bottom: 20px;
 }
@@ -47,14 +50,6 @@ nav ul li a {
 .container p {
     font-size: 18px;
 }
-
-
-
-
-
-
-
-
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -74,10 +69,15 @@ nav ul li a {
     }
 
     nav ul li {
-        padding: 10px 15px;
+        padding: 8px 12px;
+    }
+
+    .container img {
+        max-width: 70%; /* छोटे स्क्रीन पर इमेज का साइज़ */
     }
 
     .container p {
         font-size: 16px;
     }
 }
+
